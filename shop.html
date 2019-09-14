@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Loops | Shop</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/fav_icon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Main JS Files-->
+    <script type="text/javascript" src="./js/footer.js"></script>
+    <script type="text/javascript" src="./js/category_map.js"></script>
+    <script type="text/javascript" src="./js/product_map.js"></script>
+    <script type="text/javascript" src="./js/shop.js"></script>
+
+</head>
+
+<body onload="setCategories()">
+
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="loops-navbar-brand">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="loops-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- loops Nav -->
+            <nav class="loops-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <br /><br /><br /><br />
+
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between" id='social_links'>
+            </div>
+        </header>
+        <!-- Header Area End -->
+
+        <div class="shop_sidebar_area">
+
+            <!-- ##### Single Widget ##### -->
+            <div class="widget catagory mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Categories</h6>
+
+                <!--  Categories  -->
+                <div class="Categories-menu">
+                    <ul id="category_list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="loops_product_area section-padding-100">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-topbar d-xl-flex align-items-end justify-content-between">
+                            <!-- Total Products -->
+                            <div class="total-products" id="total_products_info">
+                                <p>Showing 1-8 0f 25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id='products_div'>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Pagination -->
+                        <nav aria-label="navigation">
+                            <ul class="pagination justify-content-end mt-50">
+                                <li class="page-item active"><a class="page-link" href="#">01.</a></li>
+                                <li class="page-item"><a class="page-link" href="#">02.</a></li>
+                                <li class="page-item"><a class="page-link" href="#">03.</a></li>
+                                <li class="page-item"><a class="page-link" href="#">04.</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
