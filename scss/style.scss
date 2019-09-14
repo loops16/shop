@@ -1091,17 +1091,18 @@ img {
     z-index: 1;
     width: 33.33333%;
     top: 0;
+    
     @media #{$breakpoint-lg} {
-        width: 50%;
+        width: 45%;
     }
     @media #{$breakpoint-md} {
-        width: 100%;
+        width: 95%;
     }
     @media #{$breakpoint-xs} {
-        width: 100%;
+        width: 95%;
     }
     @media #{$breakpoint-sm} {
-        width: 50%;
+        width: 45%;
     }
     a {
         display: block;
