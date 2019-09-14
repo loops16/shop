@@ -14,7 +14,7 @@ const updateProductsArea = () => {
         product_map[activeProduct].image1,
         product_map[activeProduct].image2,
         product_map[activeProduct].image3,
-        product_map[activeProduct].price,
+        product_map[activeProduct].discount,
         product_map[activeProduct].name,
         product_map[activeProduct].description,
         product_map[activeProduct].az_url,
@@ -22,6 +22,7 @@ const updateProductsArea = () => {
         'https://www.instagram.com/loopsjewelry/',
         product_map[activeProduct].sd_url,
         `https://wa.me/918506801610?text=I'm%20interested%20${product_map[activeProduct].az_url}`,
+        product_map[activeProduct].price
     ));
 
     $('#breadcrumb_list').html(breadCrumbListTemplate.format(
@@ -87,8 +88,9 @@ let product_info_template = `
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
                                 <div class="line"></div>
-                                <p class="product-price">INR {3}</p>
-                                <a href="product-details.html">
+                                <p style='text-decoration: line-through'>INR {11}/-</p>
+                                <p class="product-price">INR {3}/-</p>
+                                <a>
                                     <h6>{4}</h6>
                                 </a>
                                 <!-- Avaiable -->

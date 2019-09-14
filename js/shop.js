@@ -41,7 +41,8 @@ const getCategoryViaParams = () => {
     activeCategory = null;
     if(urlTokens.length > 1){
         activeCategory = urlTokens[1].split('=')[1];
+        activeCategory = activeCategory.replace('%20',' ');
     }
 };
 
-let product_template = `<div class="col-12 col-sm-6 col-md-12 col-xl-6"><div class="single-product-wrapper"><a href="product-details.html?id={0}"></a><div class="product-img"><a href="product-details.html?id={0}"><img src="img/product-img/{1}" alt=""></a></div><div class="product-description d-flex align-items-center justify-content-between"><div class="product-meta-data"><div class="line"></div><p class="product-price">{3}</p><h6>INR {2} only</h6></div></div></div></div>`;
+let product_template = `<div class="col-12 col-sm-6 col-md-12 col-xl-6"><div class="single-product-wrapper"><a href="product-details.html?id={0}"></a><div class="product-img"><a href="product-details.html?id={0}"><img src="img/product-img/{1}.jpg" alt=""></a></div><div class="product-description d-flex align-items-center justify-content-between"><div class="product-meta-data"><div class="line"></div><p class="product-price">{3}</p><h6>INR {2}/- only</h6></div></div></div></div>`;

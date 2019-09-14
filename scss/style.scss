@@ -43,7 +43,13 @@
 body {
     font-family: $font-hn-med;
     font-size: 16px;
-}
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */}
 
 h1,
 h2,
@@ -967,6 +973,7 @@ img {
                     line-height: 1;
                     margin-bottom: 10px;
                 }
+                
                 a {
                     display: block;
                     h6 {
@@ -1124,6 +1131,7 @@ img {
         top: 40px;
         left: 40px;
         z-index: 10;
+        background-color: #20d34a;
         @media #{$breakpoint-xs} {
             top: 30px;
             left: 30px;

@@ -33,19 +33,19 @@ let newsLetter = `<section class="newsletter-area section-padding-100-0">
         <!-- Newsletter Text -->
         <div class="col-12 col-lg-6 col-xl-7">
             <div class="newsletter-text mb-100">
-                <h2>Buy direct and get <span>10% Discount</span></h2>
-                <p></p>
+                <p><h2>Buy direct and get <span>10% Discount</span></h2>
+                </p>
             </div>
         </div>
-        <!-- Newsletter Form -->
+        <!-- Newsletter Form 
         <div class="col-12 col-lg-6 col-xl-5">
             <div class="newsletter-form mb-100">
                 <form action="#" method="post">
-                    <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
-                    <input type="submit" value="Subscribe">
+                    <input type="submit" value="Connect">
                 </form>
             </div>
         </div>
+        -->
     </div>
 </div>
 </section>`;
@@ -92,7 +92,7 @@ const footer =`    <footer class="footer_area clearfix">
 </footer>`;
 
 const social_links_format = `
-    <a href="{0}'"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="{0}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     <a href="{1}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
     <a href="{2}"><i class="fa fa-amazon" aria-hidden="true"></i></a>
 `;

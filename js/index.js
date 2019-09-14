@@ -6,7 +6,7 @@ const findCategories = () => {
         categoryDivData += category_format.format(
             category,
             category_map[category].images[0],
-            category_map[category].price[0],
+            Math.min.apply(null, category_map[category].price)
         );
     });
     $('#category-div').html(categoryDivData);
@@ -19,7 +19,7 @@ const findCategories = () => {
 let category_format =     `
             <div class="single-products-catagory clearfix">
                     <a href="shop.html?category={0}">
-                        <img src="img/bg-img/{1}" alt="">
+                        <img src="img/product-img/{1}.jpg" alt="">
                         <div class="hover-content">
                             <div class="line"></div>
                             <p>From INR {2}</p>
