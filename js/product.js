@@ -51,31 +51,31 @@ let product_info_template = `
                             <div id="product_details_slider" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li class="active" data-target="#product_details_slider" data-slide-to="0"
-                                        style="background-image: url(img/product-img/{0});">
+                                        style="background-image: url(img/product-img/{0}.jpg);">
                                     </li>
                                     <li data-target="#product_details_slider" data-slide-to="1"
-                                        style="background-image: url(img/product-img/{1});">
+                                        style="background-image: url(img/product-img/{1}.jpg);">
                                     </li>
                                     <li data-target="#product_details_slider" data-slide-to="2"
-                                        style="background-image: url(img/product-img/{2});">
+                                        style="background-image: url(img/product-img/{2}.jpg);">
                                     </li>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <a class="gallery_img" href="#">
-                                            <img class="d-block w-100" src="img/product-img/{0}"
+                                            <img class="d-block w-100" src="img/product-img/{0}.jpg"
                                                 alt="">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
                                         <a class="gallery_img" href="#">
-                                            <img class="d-block w-100" src="img/product-img/{1}"
+                                            <img class="d-block w-100" src="img/product-img/{1}.jpg"
                                                 alt="">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
                                         <a class="gallery_img" href="#">
-                                            <img class="d-block w-100" src="img/product-img/{2}"
+                                            <img class="d-block w-100" src="img/product-img/{2}.jpg"
                                                 alt="">
                                         </a>
                                     </div>
