@@ -28,6 +28,16 @@ const updateProductsArea = () => {
         product_map[activeProduct].sd_url === 'NA'?'unavailability':'avaibility'
     ));
 
+    if(product_map[activeProduct].image3 === '')
+    {
+        $('.carousel-indicators').children().last().remove();
+    }
+
+    if(product_map[activeProduct].image2 === '')
+    {
+        $('.carousel-indicators').children().last().remove();
+    }
+
     $('#breadcrumb_list').html(breadCrumbListTemplate.format(
         product_map[activeProduct].category[0],
         product_map[activeProduct].category.join(' / '),
@@ -42,9 +52,8 @@ const getIDViaParams = () => {
         activeProduct = urlTokens[1].split('=')[1];
     }
 };
-let breadCrumbListTemplate = `<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-<li class="breadcrumb-item"><a href="shop.html?category={0}">{1}</a></li>
-<li class="breadcrumb-item active" aria-current="page">{2}</li>`;
+let breadCrumbListTemplate = `
+<li class="breadcrumb-item"><a href="shop.html?category={0}">{1}</a></li>`;
 
 let product_info_template = `
                     <div class="col-12 col-lg-7">
