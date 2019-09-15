@@ -19,7 +19,7 @@ const findCategories = () => {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     }, 1000);
     $('.mobile-nav').hide();
-    $("html, body").animate({ scrollTop: 70 }, 10);
+    $("html, body").animate({ scrollTop: 70 }, 1);
 };
 
 let category_format = `

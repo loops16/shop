@@ -22,7 +22,7 @@ const addFooter = () => {
 const addSocialLinks = () => {
     $('#social_links').append(social_links_format.format(
         'https://www.instagram.com/loopsjewelry/',
-        'https://www.instagram.com/loopsjewelry/',
+        'https://m.facebook.com/loopsjewelry/',
         'https://www.amazon.in/s?rh=n%3A1951048031%2Cp_4%3AThe+Loops&ref=w_bl_sl_s_je_web_1951048031'
     ));
 };
