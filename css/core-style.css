@@ -1400,6 +1400,8 @@ img {
 	height: 100%;
 	position: relative;
 	z-index: 10;
+	border-radius: 25px;
+	border: 2px solid transparent;
 }
 
 .single-products-catagory a::after {
@@ -1419,9 +1421,13 @@ img {
 
 .single-products-catagory a img {
 	width: 100%;
+	border-radius: 25px;
 }
 
 .single-products-catagory .hover-content {
+	border-top-left-radius : 25px;
+	border-top-right-radius : 25px;
+
 	position: absolute;
 	top: 0px;
 	z-index: 10;
@@ -1467,6 +1473,8 @@ img {
 .single-products-catagory:focus a::after {
 	opacity: 1;
 	visibility: visible;
+	border-radius: 25px;
+
 }
 
 .single-products-catagory:hover .hover-content p,
