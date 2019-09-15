@@ -9,12 +9,12 @@ const setProductInfo = () => {
 };
 
 const updateProductsArea = () => {
-
+    console.log(product_map[activeProduct].az_url);
     $('#product_info').html(product_info_template.format(
         product_map[activeProduct].image1,
         product_map[activeProduct].image2,
         product_map[activeProduct].image3,
-        product_map[activeProduct].discount,
+        product_map[activeProduct].discountedPrice,
         product_map[activeProduct].name,
         product_map[activeProduct].description,
         product_map[activeProduct].az_url,
@@ -22,16 +22,17 @@ const updateProductsArea = () => {
         'https://www.instagram.com/loopsjewelry/',
         product_map[activeProduct].sd_url,
         `https://wa.me/918506801610?text=I'm%20interested%20${product_map[activeProduct].az_url}`,
-        product_map[activeProduct].price
+        product_map[activeProduct].mrp,
+        product_map[activeProduct].sd_url === 'NA'?'hidden':'visible',
+        product_map[activeProduct].sd_url === 'NA'?'Out of Stock':'In Stock',
+        product_map[activeProduct].sd_url === 'NA'?'unavailability':'avaibility'
     ));
 
     $('#breadcrumb_list').html(breadCrumbListTemplate.format(
         product_map[activeProduct].category[0],
         product_map[activeProduct].category.join(' / '),
         product_map[activeProduct].name,
-
     ));
-
 };
 
 const getIDViaParams = () => {
@@ -94,13 +95,14 @@ let product_info_template = `
                                     <h6>{4}</h6>
                                 </a>
                                 <!-- Avaiable -->
-                                <p class="avaibility"><i class="fa fa-circle"></i> In Stock</p>
+                                <p class="{14}"><i class="fa fa-circle"></i> {13}</p>
                             </div>
 
                             <div class="short_overview my-5">
                                 <p>{5}</p>
                             </div>
                         </div>
+                        <div style='visibility:{12}'>
                         <p>Buy on </p>
                         <a href="{6}"><img class='width-45 mr-10' src="img/core-img/amazon.png" alt=""></a>
                         
@@ -111,6 +113,7 @@ let product_info_template = `
                         <a href="{9}"><img class='width-45 mr-10' src="img/core-img/snapdeal.png" alt=""></a>
                         
                         <a href="{10}"><img class='width-45 mr-10' src="img/core-img/whatsapp.png" alt=""></a>
+                        </div>
                         <br/>
                         <br/><br/>
                     </div>`;

@@ -6,7 +6,7 @@ const findCategories = () => {
         categoryDivData += category_format.format(
             category,
             category_map[category].images[0],
-            Math.min.apply(null, category_map[category].price)
+            Math.min.apply(null, category_map[category].discountedPrice)
         );
     });
     $('#category-div').html(categoryDivData);

@@ -1009,6 +1009,16 @@ img {
                         font-size: 12px;
                     }
                 }
+                .unavailability {
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    color:red;
+                    line-height: 1;
+                    i {
+                        color:red;
+                        font-size: 12px;
+                    }
+                }
             }
             .short_overview {
                 p {
@@ -1547,6 +1557,7 @@ img {
     position: relative;
     z-index: 100;
     margin-bottom: 40px;
+
     .total-products {
         @media #{$breakpoint-lg} {
             margin-bottom: 30px;

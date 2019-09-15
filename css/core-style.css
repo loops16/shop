@@ -1423,16 +1423,18 @@ img {
 
 .single-products-catagory .hover-content {
 	position: absolute;
-	top: 40px;
-	left: 40px;
-	color: #fff56a;
+	top: 0px;
 	z-index: 10;
+	color:white;
+	background-color:#555;
+	padding: 10px;
+	width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
 	.single-products-catagory .hover-content {
-		top: 30px;
-		left: 30px;
+		top: 0px;
+		left: 0px;
 	}
 }
 
@@ -1458,7 +1460,7 @@ img {
 	margin-bottom: 0;
 	-webkit-transition-duration: 250ms;
 	transition-duration: 250ms;
-	color: #6d6d6d;
+	color: white;
 }
 
 .single-products-catagory:hover a::after,
@@ -1920,8 +1922,8 @@ img {
 
 .product-topbar .total-products p {
 	margin-bottom: 15px;
-	font-size: 14px;
-	color: #242424;
+	font-size: 25px;
+	color: rgb(240, 142, 153);
 	text-transform: uppercase;
 }
 
