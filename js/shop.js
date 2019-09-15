@@ -64,7 +64,7 @@ let product_template = `
          <div class="line"></div>
          <p class="product-price">{3}</p>
          MRP : <strike>INR {4}</strike> /-
-         <h5>Price : INR {2}/- only</h5>
+         <h6>Now : INR {2} /-</h6>
       </div>
    </div>
 </div>
