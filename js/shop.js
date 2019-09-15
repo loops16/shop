@@ -30,7 +30,7 @@ const updateProductsArea = () => {
     // products_div
     let productListData = '';
     $("#total_products_info").html(`Showing ${category_map[activeCategory].ids.length} of ${category_map[activeCategory].ids.length} in <br/><br/><p>${activeCategory}</p>`)
-    let startIndex = getRandomInt(category_map[activeCategory].ids.length);
+    let startIndex = 0;//getRandomInt(category_map[activeCategory].ids.length);
     for(var i =0; i < category_map[activeCategory].ids.length ; i++){
         const shiftedIndex = (startIndex + i) % category_map[activeCategory].ids.length;
         productListData += product_template.format(

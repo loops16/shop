@@ -31,11 +31,14 @@ const updateProductsArea = () => {
     if(product_map[activeProduct].image3 === '')
     {
         $('.carousel-indicators').children().last().remove();
+        $('.carousel-inner').children().last().remove();
+        
     }
 
     if(product_map[activeProduct].image2 === '')
     {
         $('.carousel-indicators').children().last().remove();
+        $('.carousel-inner').children().last().remove();
     }
 
     $('#breadcrumb_list').html(breadCrumbListTemplate.format(
