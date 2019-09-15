@@ -15,7 +15,7 @@ const findCategories = () => {
     addSocialLinks();
     setTimeout(function () {
         $('#loops_banner').fadeOut(1000);
-    }, 1000);
+    }, 2000);
 };
 
 let category_format = `
