@@ -13,10 +13,16 @@ const findCategories = () => {
     addNewsletter();
     addFooter();
     addSocialLinks();
-
+    setTimeout(function () {
+        $('#loops_banner').fadeOut(1000);
+        $('.mobile-nav').fadeIn(1000);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    }, 1000);
+    $('.mobile-nav').hide();
+    $("html, body").animate({ scrollTop: 70 }, 10);
 };
 
-let category_format =     `
+let category_format = `
             <div class="single-products-catagory clearfix">
                     <a href="shop.html?category={0}">
                         <img src="img/product-img/{1}.jpg" alt="">

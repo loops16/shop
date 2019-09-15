@@ -2074,3 +2074,17 @@ img {
 
 
 /*# sourceMappingURL=core-style.css.map */
+
+#loops_banner {
+	z-index: 11111;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:#444;
+	display: flex;
+}
+#loops_banner img {
+	width: 400px;
+    height: 400px; 
+    margin: auto; 
+}
