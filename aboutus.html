@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +13,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Loops | Product Details</title>
+    <title>Loops | Home</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/fav_icon.ico">
@@ -20,13 +24,10 @@
 
     <!--Main JS Files-->
     <script type="text/javascript" src="./js/footer.js"></script>
-    <script type="text/javascript" src="./js/category_map.js"></script>
-    <script type="text/javascript" src="./js/product_map.js"></script>
-    <script type="text/javascript" src="./js/product.js"></script>
-
+    <script type="text/javascript" src="./js/shipping.js"></script>
 </head>
 
-<body onload="setProductInfo()">
+<body onload="init()">
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
 
@@ -57,40 +58,47 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <hr/>
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <hr />
+                    <li class="active"><a href="aboutus.html">About Us</a></li>
                     <li><a href="shipping.html">Shipping Policy</a></li>
                     <li><a href="return.html">Return Policy</a></li>
                 </ul>
             </nav>
+
+
             <br /><br /><br /><br />
+            <!-- Social Button -->
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between" id='social_links'>
             </div>
         </header>
         <!-- Header Area End -->
 
-        <!-- Product Details Area Start -->
-        <div class="single-product-area clearfix">
-            <div class="container-fluid">
-
-                <div class="row">
-                    <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb mt-30" id="breadcrumb_list">
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="row" id='product_info'>
-                    
-                </div>
+        <!-- Product Categories Area Start -->
+        <div class="products-Categories-area clearfix">
+            <div class='about-us'>
+                <h3>About Us</h3>
+                <p>
+                    At some point in our lives, we have all gone through certain jewellery woes! At Loops, our mission
+                    is
+                    to
+                    create a fashion jewellery line that women could look upto for buying modern, trendy & quality
+                    assured
+                    pieces.
+                    <br /><br />
+                    Every women has more than one side to express. Sometime classy, sometime trendy. At holidays and at
+                    work.Something for fun & something for special events in life. We understand what you want and try
+                    to
+                    bring
+                    the latest styles for all your different needs.
+                    <br /><br />
+                    Loops promises to offer you distinctive jewellery collections that pays tribute to sophistication,
+                    adventure
+                    and ever-evolving style of modern women,
+                </p>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- Product Details Area End -->
+        <!-- Product Categories Area End -->
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
 
@@ -102,6 +110,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugins js -->
     <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="./js/active.js"></script>
+
 </body>
 
 </html>
