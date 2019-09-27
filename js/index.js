@@ -15,6 +15,7 @@ const findCategories = () => {
     addSocialLinks();
     setTimeout(function () {
         $('#loops_banner').fadeOut(1000);
+        addActiveJS();
     }, 2000);
 };
 

@@ -19,6 +19,7 @@ const setCategories = () => {
     addNewsletter();
     addFooter();
     addSocialLinks();
+    addActiveJS();
 };
 
 const getRandomInt = (max) => {

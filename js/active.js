@@ -4,7 +4,7 @@
     var $window = $(window);
 
     // :: 1.0 Masonary Gallery Active Code
-    /*
+    
     var proCata = $('.loops-pro-catagory');
     var singleProCata = ".single-products-catagory";
 
@@ -19,7 +19,7 @@
                 }
             });
         });
-    }*/
+    }
 
     // :: 2.1 Search Active Code
     var loopsSearch = $('.search-nav');

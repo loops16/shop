@@ -27,13 +27,24 @@ const addSocialLinks = () => {
     ));
 };
 
+const addActiveJS = () => {
+    var imported = document.createElement('script');
+    imported.src = 'js/active.js';
+    document.head.appendChild(imported);
+}
+
 let newsLetter = `<section class="newsletter-area section-padding-100-0">
 <div class="container">
     <div class="row align-items-center">
         <!-- Newsletter Text -->
         <div class="col-12 col-lg-6 col-xl-7">
             <div class="newsletter-text mb-100">
-                <p><h2>Buy direct and get <span>10% Discount</span></h2>
+                <p><h2>Offers Zone</h2>
+                <br/>
+                <h5><span>Shop above 750/- and get shipping free</span></h5>
+                <br/>
+
+                <h5><span>Shop above 1000/- and get 10% Discount</span></h5>
                 </p>
             </div>
         </div>

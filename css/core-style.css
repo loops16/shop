@@ -654,6 +654,30 @@ img {
 	color: #131212;
 	font-weight: normal;
 }
+.about-us {
+	padding: 40px;
+}
+.about-us h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	padding: 20px 0;
+	margin-top: 20px;
+	display: block;
+	line-height: 0.9;
+	color: #333;
+	font-weight: normal;
+}
+
+.about-us p {
+	font-size: 16px;
+	position: relative;
+	z-index: 1;
+	display: block;
+	line-height: 1.8;
+	font-weight: normal;
+}
 
 .main-content-wrapper .header-area .loops-nav li a::after {
 	-webkit-transition-duration: 500ms;
@@ -1378,19 +1402,19 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.single-products-catagory {
-		width: 95%;
+		width: 45%;
 	}
 }
 
 @media only screen and (max-width: 767px) {
 	.single-products-catagory {
-		width: 95%;
+		width: 45%;
 	}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	.single-products-catagory {
-		width: 95%;
+		width: 45%;
 	}
 }
 
@@ -1492,9 +1516,10 @@ img {
 }
 
 .newsletter-area .newsletter-text h2 {
-	font-size: 36px;
+	text-transform: uppercase;
+	font-size: 24px;
 	margin-bottom: 10px;
-	color: #fff;
+	color: rgb(245, 223, 181);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1510,6 +1535,9 @@ img {
 }
 
 .newsletter-area .newsletter-text h2 span {
+	color: rgb(240, 142, 153);
+}
+.newsletter-area .newsletter-text h5 span {
 	color: rgb(240, 142, 153);
 }
 

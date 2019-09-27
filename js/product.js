@@ -6,10 +6,10 @@ const setProductInfo = () => {
     addNewsletter();
     addFooter();
     addSocialLinks();
+    addActiveJS();
 };
 
 const updateProductsArea = () => {
-    console.log(product_map[activeProduct].az_url);
     $('#product_info').html(product_info_template.format(
         product_map[activeProduct].image1,
         product_map[activeProduct].image2,
